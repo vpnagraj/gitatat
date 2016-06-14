@@ -1,0 +1,3 @@
+[console_scripts]
+gitatat = gitatat.main:main
+

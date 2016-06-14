@@ -1,0 +1,8 @@
+setup.py
+gitatat/__init__.py
+gitatat/main.py
+gitatat.egg-info/PKG-INFO
+gitatat.egg-info/SOURCES.txt
+gitatat.egg-info/dependency_links.txt
+gitatat.egg-info/entry_points.txt
+gitatat.egg-info/top_level.txt
