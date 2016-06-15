@@ -9,7 +9,7 @@ def main():
     
     parser.add_argument('input_file', default='.', nargs='?', help='file to be added')
     parser.add_argument('--pages', dest = 'pages', action = 'store_true')
-    parser.set_defaults(pages = True)
+    parser.set_defaults(pages = False)
     args = parser.parse_args()
     
     gitadd = "git add " + args.input_file
