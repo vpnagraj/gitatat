@@ -15,10 +15,10 @@ def main():
 
     commitmessage = raw_input("commit message: ")
 
-    gitcommit = "git commit -m " + commitmessage
+    gitcommit = "git commit -m '" + commitmessage + "'"
 
     gitpush = "git push origin master"
-
+    
     os.system(gitadd + " ; " + gitcommit + " ; " + gitpush)
     
     # TODO: include workflow for updating gh-pages 
@@ -27,6 +27,6 @@ def main():
     # git rebase master
     # git push origin gh-pages
     # git checkout master
-        
+    
 if __name__ == '__main__':
     main()
