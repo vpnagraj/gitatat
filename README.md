@@ -1,2 +1,2 @@
 # gitatat
-python package that is a convenience wrapper for git
+convenience wrapper for git
