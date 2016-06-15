@@ -8,7 +8,8 @@ def main():
     parser =  argparse.ArgumentParser(prog='gitatat')
     
     parser.add_argument('input_file', default='.', nargs='?', help='file to be added')
-        
+    parser.add_argument('--pages', dest = 'pages', action = 'store_true')
+    parser.set_defaults(pages = True)
     args = parser.parse_args()
     
     gitadd = "git add " + args.input_file
@@ -21,6 +22,8 @@ def main():
     
     os.system(gitadd + " ; " + gitcommit + " ; " + gitpush)
     
+    if args.pages:
+        os.system("git --version")
     # TODO: include workflow for updating gh-pages 
     # git branch -v | grep -c "gh-pages"
     # git checkout gh-pages
